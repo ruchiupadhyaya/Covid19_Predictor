@@ -19,6 +19,7 @@ if con:
 
 
 def processing_for_district_table(key,value):
+    global con,query
     year=key[0:4]
     month=key[5:7]
     day=key[8:10]
@@ -189,15 +190,16 @@ def processing_for_district_table(key,value):
 
 
 data=[]
-with open('./data/jsondata.json') as f:
+with open('./Main_Workspace/data/jsondata.json') as f:
     data=json.load(fp=f)
+
 
 for key,value in data.items():
     processing_for_district_table(key,value)
 
 
 data=[]
-with open('./data/jsondata2.json') as f:
+with open('./Main_Workspace/data/jsondata2.json') as f:
     data=json.load(fp=f)
 
 for i in data:
@@ -205,5 +207,5 @@ for i in data:
     for key,value in i.items():
         processing_for_district_table(key,value)
 
-con.commit()
+# con.commit()
 con.close()
