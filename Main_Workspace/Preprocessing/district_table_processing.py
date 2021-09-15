@@ -76,11 +76,6 @@ def processing_for_district_table(key,value):
                                 except:
                                     pass
                                 try:
-                                    delta_tested=objects['delta']['tested']
-                                    # print(objects['delta']['tested'])
-                                except:
-                                    pass
-                                try:
                                     delta_other=objects['delta']['other']
                                     # print(objects['delta']['other'])
                                 except:
@@ -117,11 +112,6 @@ def processing_for_district_table(key,value):
                                 except:
                                     pass
                                 try:
-                                    delta7_tested=objects['delta7']['tested']
-                                    # print(objects['delta7']['tested'])
-                                except:
-                                    pass
-                                try:
                                     delta7_other=objects['delta7']['other']
                                     # print(objects['delta7']['other'])
                                 except:
@@ -155,11 +145,6 @@ def processing_for_district_table(key,value):
                                 try:
                                     total_deaths=objects['total']['deceased']
                                     # print(objects['total']['deceased'])
-                                except:
-                                    pass
-                                try:
-                                    total_tested=objects['total']['tested']
-                                    # print(objects['total']['tested'])
                                 except:
                                     pass
                                 try:
@@ -207,5 +192,5 @@ for i in data:
     for key,value in i.items():
         processing_for_district_table(key,value)
 
-# con.commit()
+con.commit()
 con.close()
