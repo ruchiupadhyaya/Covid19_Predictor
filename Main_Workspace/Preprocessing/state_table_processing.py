@@ -16,6 +16,8 @@ connect_to_database()
 if con:
     print(con)
 
+exit()
+
 def processing_for_state_table(key,value):
     year=key[0:4]
     month=key[5:7]
@@ -185,15 +187,22 @@ def processing_for_state_table(key,value):
     print("done : ",date)
 
 data=[]
-with open('./Main_Workspace/data/jsondata.json') as f:
-    data=json.load(fp=f)
+# with open('./Main_Workspace/data/jsondata.json') as f:
+#     data=json.load(fp=f)
 
-for key,value in data.items():
-    processing_for_state_table(key,value)
+# for key,value in data.items():
+#     processing_for_state_table(key,value)
 
 
-data=[]
-with open('./Main_Workspace/data/jsondata2.json') as f:
+# with open('./Main_Workspace/data/jsondata2.json') as f:
+#     data=json.load(fp=f)
+
+# for i in data:
+#     for key,value in i.items():
+#         processing_for_state_table(key,value)
+
+
+with open('./Main_Workspace/data/main_data.json') as f:
     data=json.load(fp=f)
 
 for i in data:

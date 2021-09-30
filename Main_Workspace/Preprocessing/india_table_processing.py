@@ -192,14 +192,23 @@ def processing_for_india_table(key,value):
 
 
 data=[]
-with open('./Main_Workspace/data/jsondata.json') as f:
-    data=json.load(fp=f)
+# with open('./Main_Workspace/data/jsondata.json') as f:
+#     data=json.load(fp=f)
 
-for key,value in data.items():
-    processing_for_india_table(key,value)
+# for key,value in data.items():
+#     processing_for_india_table(key,value)
 
 
-with open('./Main_Workspace/data/jsondata2.json') as f:
+# with open('./Main_Workspace/data/jsondata2.json') as f:
+#     data=json.load(fp=f)
+
+# for i in data:
+#     # print(i)
+#     for key,value in i.items():
+#         processing_for_india_table(key,value)
+
+
+with open('./Main_Workspace/data/main_data.json') as f:
     data=json.load(fp=f)
 
 for i in data:
