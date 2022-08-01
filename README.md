@@ -1,5 +1,5 @@
 # Covid19_Data_Analysis_and_Prediction
-## This Project is Being Created Using Machine Learnig Approach
+## This Project is Being Created Using Machine Learning Approach
 Mini Project Sem-5
 
  ---
